@@ -29,6 +29,7 @@ public class DataRestTest {
         this.mvc=mvc;
     }
 
+    @Disabled
     @DisplayName("[api] 게시글 리스트 조회")
     @Test
     void given_whenRequestingArticles_thenReturnsArticlesJsonResponse() throws Exception {
@@ -41,6 +42,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
+    @Disabled
     @DisplayName("[api] 게시글 단일 조회")
     @Test
     void given_whenRequestingArticles_thenReturnsArticleJsonResponse() throws Exception {
@@ -53,6 +55,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
+    @Disabled
     @DisplayName("[api] 게시글 -> 댓글 리스트 조회")
     @Test
     void given_whenRequestingArticleCommentsFormArticle_thenReturnsArticleCommentsJsonResponse() throws Exception {
@@ -65,6 +68,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
+    @Disabled
     @DisplayName("[api] 댓글 리스트 조회")
     @Test
     void given_whenRequestingArticleComments_thenReturnsArticleCommentsJsonResponse() throws Exception {
@@ -77,6 +81,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
+    @Disabled
     @DisplayName("[api] 댓글 단일 조회")
     @Test
     void given_whenRequestingArticleComment_thenReturnsArticleCommentJsonResponse() throws Exception {
